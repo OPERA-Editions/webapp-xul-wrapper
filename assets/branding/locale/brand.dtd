@@ -1,5 +1,7 @@
-﻿<!ENTITY  brandShortName        "Webapp XUL Wrapper">
-<!ENTITY  brandFullName         "Webapp XUL Wrapper">
-<!ENTITY  vendorUrl             "http://www.example.com">
-<!ENTITY  vendorShortName       "Webapp XUL Wrapper Contributors">
-<!ENTITY  logoCopyright         "©2012 Webapp XUL Wrapper Contributors. All rights reserved.">
+﻿<!ENTITY  brandShortName        "OPERA vol. 1">
+<!ENTITY  brandFullName         "OPERA vol. 1">
+<!ENTITY  brandVersion          "1.0.0">
+<!ENTITY  vendorUrl             "http://www.opera-edition.com/">
+<!ENTITY  vendorShortName       "OPERA">
+<!ENTITY  softwareName          "Edirom Online">
+<!ENTITY  logoCopyright         "©2013 OPERA. All rights reserved.">
