@@ -1,5 +1,5 @@
-// This is the URI that is loaded when Zotero Standalone is opened
-pref("toolkit.defaultChromeURI", "chrome://app/content/ui/main.xul");
+// This is the URI that is loaded when Edirom Online Standalone is opened
+pref("toolkit.defaultChromeURI", "chrome://edirom-online/content/ui/main.xul");
 
 // We only want a single window, I think
 pref("toolkit.singletonWindowType", "navigator:browser");
@@ -19,8 +19,6 @@ pref("javascript.options.methodjit.chrome", true);
 // Use OS locale
 pref("intl.locale.matchOS", true);
 
-// Use basicViewer for opening new DOM windows from content (for TinyMCE)
-pref("browser.chromeURL", "chrome://app/content/ui/basicViewer.xul");
 // We need these to get the save dialog working with contentAreaUtils.js
 pref("browser.download.useDownloadDir", false);
 pref("browser.download.manager.showWhenStarting", true);
@@ -89,15 +87,15 @@ pref("app.update.showInstalledUI", true);
 
 // Update service URL:
 // You do not need to use all the %VAR% parameters. Use what you need, %PRODUCT%,%VERSION%,%BUILD_ID%,%CHANNEL% for example
-pref("app.update.url", "https://www.example.com/app/update/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/update.xml");
+pref("app.update.url", "http://www.opera-edition.com/updates/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/update.xml");
 
 // URL user can browse to manually if for some reason all update installation
 // attempts fail.
-pref("app.update.url.manual", "http://www.example.com/app/");
+pref("app.update.url.manual", "http://www.opera-edition.com/updates/");
 
 // A default value for the "More information about this update" link
 // supplied in the "An update is available" page of the update wizard.
-pref("app.update.url.details", "http://www.example.com/app/changelog");
+pref("app.update.url.details", "http://www.opera-edition.com/updates/");
 
 // User-settable override to app.update.url for testing purposes.
 //pref("app.update.url.override", "");
@@ -139,6 +137,11 @@ pref("app.update.channel", "replaced-by-build-script");
 pref("network.protocol-handler.warn-external.http", false);
 pref("network.protocol-handler.warn-external.https", false);
 pref("network.protocol-handler.warn-external.ftp", false);
+
+//pref("network.protocol-handler.expose.http", true);
+//pref("network.protocol-handler.external.http", true);
+//pref("network.protocol-handler.expose.https", true);
+//pref("network.protocol-handler.external.https", true);
 
 // disable disk cache which would risk delivering stale files after app updates
 pref("browser.cache.disk.enable", false);
